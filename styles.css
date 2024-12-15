@@ -1,0 +1,230 @@
+/* Reset dan pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Menengahkan teks secara default */
+}
+
+/* Header */
+header {
+    background-color: #87CEEB; /* Biru Langit */
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Navigasi */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #32CD32; /* Hijau */
+    padding: 1rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1.5rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Umum */
+section {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Konten (rata kiri-kanan) */
+section h2, section p {
+    text-align: justify; /* Menyusun teks agar rapi */
+}
+
+/* Bagian Tentang (About) */
+.about-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.about-section img {
+    border-radius: 50%; /* Frame bulat untuk foto */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #32CD32; /* Hijau */
+    margin-bottom: 1rem;
+}
+
+.about-section h2 {
+    color: #32CD32;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold; /* Teks bold */
+}
+
+.about-section p {
+    font-size: 1.2rem;
+}
+
+/* Frame untuk foto di halaman index (kotak lonjong) */
+.index-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px; /* Frame kotak lonjong */
+    border: 5px solid #87CEEB; /* Biru Langit */
+    margin-bottom: 1.5rem;
+}
+
+/* Frame untuk foto di halaman projek (kotak) */
+.project-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0; /* Frame kotak */
+    border: 5px solid #32CD32; /* Hijau */
+    margin-bottom: 1.5rem;
+}
+
+/* Formulir Kontak */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #87CEEB;
+    color: white;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+    background-color: #228B22; /* Hijau lebih gelap */
+}
+
+/* Tautan media sosial */
+.social-links a {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #32CD32;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #32CD32; /* Hijau */
+    color: white;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Teks bold di tengah halaman */
+.bold-center {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    text-align: center; /* Menengahkan teks secara horizontal */
+    margin-top: 2rem;
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .about-section img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .index-section img,
+    .project-section img {
+        height: 200px;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .bold-center {
+        font-size: 1.5rem;
+    }
+}
